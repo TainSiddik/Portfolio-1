@@ -1,0 +1,760 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* end of reset */
+
+/* scrool */
+html {
+  scroll-behavior: smooth;
+}
+/* end of scrool */
+
+/* Navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(124, 4, 88);
+    padding: 5px 150px;
+    color: azure;
+    position: relative;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+}
+
+nav .menu ul li a {
+    color: azure;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+nav .menu ul li a:hover {
+    color: rgb(248, 142, 216);
+}
+
+nav button {
+    display: none;
+}
+
+.mobileNav {
+    width: 100%;
+    background-color: rgb(148, 5, 105);
+    padding: 12px 0;
+    text-align: center;
+    line-height: 36px;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobileNav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.mobileNav ul li a:hover {
+    background-color: rgb(56, 2, 61);
+}
+/* end of navbar */
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 150px;
+    margin-top: 100px;
+}
+
+header .greating .hi {
+    margin-bottom: 16px;
+}
+
+header .greating .icon a {
+    margin-right: 20px;
+}
+
+header .greating .icon a:hover {
+    color: rgb(201, 5, 158);
+}
+
+header .greating .name {
+    color: rgb(185, 7, 132);
+}
+
+header .greating .me {
+    color: rgb(185, 7, 132);;
+}
+
+header .greating .learn {
+    background-color: rgb(244, 241, 245);
+    width: 130px;
+    text-align: center;
+    padding: 12px 12px;
+    border: 1px solid rgb(231, 6, 213);
+    border-radius: 100px;
+    color: azure;
+    text-decoration: none;
+    display: block;
+    margin-top: 24px;
+    color: black;
+}
+
+header .greating .learn:hover {
+    background-color: rgb(161, 7, 115);
+    color: white;
+}
+
+header .image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 3px solid rgb(226, 1, 226);
+    box-shadow: 0 8px 10px rgba(15, 15, 15, 0.2);
+}
+/* end of header */
+
+/* iam */
+
+#iam {
+  scroll-margin-top: 188px; /* header 70px + 16px breathing room */
+}
+
+.iam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(70, 3, 70);
+    margin-top: 350px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 24px;
+    color: azure;
+    border: 1px solid rgb(243, 140, 243);
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(20, 20, 20, 0.2);
+}
+
+.iam .img img {
+    width: 220px;
+    border-radius: 100%;
+    border: 2px solid rgb(252, 6, 252);
+}
+
+.iam .i {
+    border-left: 3px solid fuchsia;
+    margin-left: 60px;
+    padding-left: 50px;
+}
+
+.iam .i h2{
+    margin-top: 16px;
+    color: rgb(251, 204, 255);
+}
+
+.iam .i p {
+    margin-top: 24px;
+    line-height: 2;
+}
+
+/* end of today */
+
+/* Skill */
+.skill {
+    margin-top: 350px;
+    display: flex;
+    padding: 150px;
+    justify-content: space-between;
+}
+
+.skill .icon {
+    width: 50%;
+   
+}
+
+.skill .icon img {
+    width: 60px;
+    height: 60px;
+    padding-bottom: 30px;
+    margin-left: 100px;
+}
+
+.skill .icon img:hover {
+    scale: 150%;
+    transition: scale 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.skill .explain {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid fuchsia;
+}
+
+.skill .explain h3 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+/* end of skill */
+
+/* portfolio */
+.portfolio {
+    background-color: rgb(115, 8, 129);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 350px;
+    border-radius: 10px;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: rgb(95, 6, 61);
+    box-shadow: 0 6px 10px rgba(20, 20, 20, 0.2);
+}
+
+.portfolio h1 {
+    text-decoration: underline;
+    color: azure;
+}
+
+.portfolio .wrapper {
+    display: flex;
+    margin-top: 36px;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.portfolio .card {
+    width: 400px;
+    background-color: rgb(236, 234, 233);
+    border-radius: 10px;
+    padding-bottom: 24px;
+    border: 2px solid fuchsia;
+    margin-top: 24px;
+}
+
+.portfolio .card:hover {
+    scale: 120%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio .card img{
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 36px;
+    
+}
+/* end of portfolio */
+
+/* about */
+.about {
+    margin: 300px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: silver;
+}
+/* about end */
+
+/* contact */
+.contact {
+    display: flex;
+    margin: 60px 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .img {
+    margin-right: 40px;
+}
+
+.contact .img img {
+    width: 400px;
+}
+
+.contact .msg {
+    padding: 24px 30px;
+    border: 4px solid rgb(212, 1, 202);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.contact .msg h1 {
+    color: rgb(134, 2, 123);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 24px;
+}
+
+.contact .msg form input {
+    width: 40%;
+    height: 28px;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    border: 2px solid rgb(218, 5, 189);
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact .msg form textarea {
+    width: 97%;
+    height: 180px;
+    display: block;
+    margin-top: 12px;
+    border: 2px solid rgb(218, 5, 189);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact .msg button {
+    margin-top: 24px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    border: 2px solid rgb(218, 5, 189);
+    background-color: rgb(252, 252, 252);
+    font-size: 16px;
+}
+
+.contact .msg button:hover {
+    background-color: rgb(148, 2, 148);
+    transition: all 0.3s ease-in-out;
+    color: azure;
+    cursor: pointer;
+}
+
+.or {
+    margin-top: 300px;
+}
+
+.or h1 {
+    text-align: center;
+    color: rgb(124, 2, 124);
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.personal {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 120px;
+    word-spacing: 24px;
+    margin-bottom: 200px;
+}
+
+.personal a:hover {
+    font-size: 200px;
+    transition: all 0.3s ease-in-out;
+}
+/* contact end */
+
+/* footer */
+footer {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(124, 4, 88);
+    padding: 16px 150px;
+    color: azure;
+}
+
+footer .copyright a {
+    text-decoration: none;
+    color: salmon;
+}
+
+footer .dev a {
+    text-decoration: none;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: rgb(230, 142, 241);
+}
+
+footer .dev a:hover {
+    text-decoration: underline;
+    color: rgb(243, 188, 226);
+}
+/* end of footer */
+
+
+
+/* -------- tablet ---------- */
+@media (max-width: 992px) {
+     #iam {
+        scroll-margin-top: 130px; /* header 70px + 16px breathing room */
+    } 
+    /* nav */
+    nav{
+        padding: 8px 36px;
+    }
+    
+    nav .logo h1{
+        font-size: 28px;
+    }
+    /* end nav */
+
+    /* end header */
+    header {
+        padding: 0 40px;
+        margin-top: 112px;
+    }
+
+    header .greating h1 {
+    font-size: 28px;
+    }   
+
+    header .image img {
+        width: 240px;
+        height: 240px;
+    }
+    /* end header */
+
+    /* iam */
+    .iam {
+    margin-top: 220px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 40px 36px;
+    }
+
+    .iam .img img {
+        width: 200px;
+    }
+
+    .iam .i h2{
+        text-align: center;
+    }
+
+    .iam .i p {
+        text-align: justify;
+    }
+    /* end iam */
+
+    /* skill */
+    .skill {
+    margin-top: 350px;
+    padding: 12px 12px;
+    }
+
+    .skill .icon img {
+        width: 60px;
+        height: 60px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-left: 50px;
+    }
+
+    .skill .explain h3 {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    /* end of skill */
+
+    /* portfolio */
+    .portfolio {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 280px;
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+
+    .portfolio .wrapper {
+        margin-top: 12px;
+    }
+
+    .portfolio .card {
+        padding-bottom: 6px;
+    }
+
+    .portfolio .card img{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 0px;
+    }
+    /* end of portfolio */
+
+    /* contact */
+    .contact {
+        margin: 80px 36px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact .img {
+        margin-right: 36px;
+    }
+
+    .contact .img img {
+        width: 250px;
+    }
+    /* contact end */
+
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+/* ----- end of tablet ------ */
+
+
+
+/* --------- mobile---------- */
+@media (max-width: 768px) {
+    #iam {
+        scroll-margin-top: 75px; /* header 70px + 16px breathing room */
+    }   
+    /* nav */
+    nav{
+        padding: 12px 12px;
+    }
+    
+    nav .logo h1{
+        font-size: 22px;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav button {
+        display: flex;
+        font-size: 24px;
+        background-color: rgb(139, 6, 99);
+        padding: 2px;
+        border: 1px solid rgb(245, 26, 227);
+        border-radius: 5px;
+        color: white;
+    }
+    
+    /* end nav */
+
+    /* header */
+    header {
+        display: block;
+        padding: 0 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    header .greating h1 {
+    font-size: 24px;
+    }   
+
+    header a {
+        margin: auto;
+    }
+
+    header .image {
+        margin-top: 50px;
+    }
+
+    header .image img {
+        width: 280px;
+        height: 280px;
+        display: block;
+        margin: auto;
+    }
+    /* end header */
+
+    /* iam */
+    .iam {
+    display: block;
+    background-color: rgb(70, 3, 70);
+    margin-top: 180px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 40px 40px;
+    color: azure;
+    border: 1px solid rgb(243, 140, 243);
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(20, 20, 20, 0.2);
+    }
+
+    .iam .img img {
+        width: 220px;
+        border-radius: 100%;
+        border: 2px solid rgb(252, 6, 252);
+        display: block;
+        margin: auto;
+    }
+
+    .iam .i {
+        margin-left: 0px;
+        margin-top: 36px;
+        padding-left: 0px;
+        border-left: none;
+        border-top: 1px solid fuchsia;
+    }
+
+    .iam .i h2{
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .iam .i p {
+        text-align: justify;
+    }
+    /* end iam */
+
+    /* skill */
+    .skill {
+    margin-top: 180px;
+    display: block;
+    padding: 0px 12px;
+    }
+
+    .skill .explain {
+        border-right: none;
+        width: 100%;
+    }
+
+    .skill .explain h3 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .skill .icon {
+        border-top: 3px solid rgb(179, 7, 179);
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    .skill .icon img {
+        width: 60px;
+        height: 60px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        margin-left: 50px;
+    }
+
+    .skill .icon img:hover {
+        scale: 150%;
+        transition: scale 0.1s ease-in-out;
+        cursor: pointer;
+    }
+    /* end of skill */
+
+    /* prtfolio */
+    .portfolio {
+        background-color: rgb(115, 8, 129);
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 0;
+        margin-top: 180px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .portfolio .wrapper {
+        display: block;
+        margin-top: 36px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .portfolio .card {
+        width: 280px;
+        background-color: rgb(236, 234, 233);
+        border-radius: 10px;
+        padding-bottom: 24px;
+        border: 2px solid fuchsia;
+        margin: 44px auto;
+    }
+
+    .portfolio .card:hover {
+        scale: 120%;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .portfolio .card img{
+        width: 100%;
+        height: 280px;
+        border-radius: 10px;
+        margin-bottom: 36px;
+        
+    }
+    /* portofoli end */
+
+    /* contact */
+    .contact {
+        display: block;
+        margin: 0;
+    }
+
+    .contact .img{
+        margin-right: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .contact .img img {
+        display: block;
+        margin: auto;
+    }
+
+    .contact .msg {
+    width: 80%;
+    padding-left: 24px;
+    padding-right: 30px;
+    margin: auto;
+    }
+
+    .contact .msg form input {
+        width: 100%;
+    }
+
+    .personal {
+        margin-bottom: 80px;
+    }
+
+    .personal a {
+        display: block;
+        line-height: 200px;
+    }
+
+
+    /* contact end */
+
+    /* footer */
+    footer {
+        margin-top: 50px;
+        display: block;
+        background-color: rgb(124, 4, 88);
+        padding: 16px 16px;
+        color: azure;
+        text-align: center;
+    }
+
+    footer .dev {
+        display: none;
+    }
+    /* footer end */
+}
+/* ------ end of mobile ----- */
