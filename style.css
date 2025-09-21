@@ -83,8 +83,8 @@ header .greating .hi {
     margin-bottom: 16px;
 }
 
-header .greating .icon a {
-    margin-right: 20px;
+header .greating .icon {
+    word-spacing: 16px;
 }
 
 header .greating .icon a:hover {
@@ -758,3 +758,4 @@ footer .dev a:hover {
     /* footer end */
 }
 /* ------ end of mobile ----- */
+
